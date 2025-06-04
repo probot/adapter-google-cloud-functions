@@ -7,6 +7,11 @@
   "scripts": {
     "test": "jest --coverage && standard"
   },
+  "files": [
+    "index.js",
+    "README.md",
+    "views/*"
+  ],
   "repository": "github:probot/adapter-google-cloud-functions",
   "devDependencies": {
     "jest": "^29.2.2",
