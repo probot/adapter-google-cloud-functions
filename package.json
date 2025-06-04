@@ -12,7 +12,10 @@
     "README.md",
     "views/*"
   ],
-  "repository": "github:probot/adapter-google-cloud-functions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/probot/adapter-google-cloud-functions.git"
+  },
   "devDependencies": {
     "jest": "^29.2.2",
     "probot": "^13.0.0",
@@ -41,5 +44,9 @@
     ]
   },
   "author": "Jason Etcovitch <jasonetco@github.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
 }
