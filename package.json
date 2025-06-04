@@ -1,6 +1,6 @@
 {
   "name": "@probot/adapter-google-cloud-functions",
-  "version": "0.2.0",
+  "version": "0.0.0-development",
   "description": "An extension for running Probot in Google Cloud Functions",
   "main": "index.js",
   "type": "commonjs",
