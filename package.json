@@ -1,23 +1,23 @@
 {
-  "name": "@probot/serverless-gcf",
+  "name": "@probot/adapter-google-cloud-functions",
   "version": "0.2.0",
   "description": "An extension for running Probot in Google Cloud Functions",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "jest --coverage && standard"
   },
-  "repository": "github:probot/serverless-gcf",
+  "repository": "github:probot/adapter-google-cloud-functions",
   "devDependencies": {
     "jest": "^29.2.2",
-    "probot": "^12.0.0",
+    "probot": "^13.0.0",
     "standard": "^17.0.0"
   },
   "peerDependencies": {
-    "probot": "^12.0.0"
+    "probot": "^13.0.0"
   },
   "engines": {
-    "node": ">= 8.10.0",
-    "npm": ">= 5.0.0"
+    "node": ">= 18.0.0"
   },
   "keywords": [
     "google cloud functions",

@@ -1,4 +1,4 @@
-const { serverless } = require('../')
+const { serverless } = require('../index.js')
 
 describe('serverless-gcf', () => {
   let spy, handler, response

@@ -1,19 +1,18 @@
 const { createProbot } = require('probot')
-const { resolve } = require('probot/lib/resolver')
-const { findPrivateKey } = require('probot/lib/private-key')
-const { template } = require('./views/probot')
+const { resolveAppFunction } = require('probot/lib/helpers/resolve-app-function.js')
+const { template } = require('./views/probot.js')
 
+/** @type {import("probot").Probot} */
 let probot
 
 const loadProbot = appFn => {
   probot = probot || createProbot({
     id: process.env.APP_ID,
-    secret: process.env.WEBHOOK_SECRET,
-    cert: findPrivateKey()
+    secret: process.env.WEBHOOK_SECRET
   })
 
   if (typeof appFn === 'string') {
-    appFn = resolve(appFn)
+    appFn = resolveAppFunction(appFn)
   }
 
   probot.load(appFn)
