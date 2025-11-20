@@ -13,7 +13,7 @@ jobs:
   test-building:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: actions/setup-node@v4
         with:
           cache: npm
@@ -32,7 +32,7 @@ jobs:
           - 24
     name: Node ${{ matrix.node_version }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node_version }}
