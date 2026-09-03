@@ -17,7 +17,7 @@
     "url": "git+https://github.com/probot/adapter-google-cloud-functions.git"
   },
   "devDependencies": {
-    "jest": "^29.2.2",
+    "jest": "^30.0.0",
     "probot": "^13.0.0",
     "standard": "^17.0.0"
   },
