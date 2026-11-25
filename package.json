@@ -18,11 +18,11 @@
   },
   "devDependencies": {
     "jest": "^29.2.2",
-    "probot": "^13.0.0",
+    "probot": "^14.0.0",
     "standard": "^17.0.0"
   },
   "peerDependencies": {
-    "probot": "^13.0.0"
+    "probot": "^14.0.0"
   },
   "engines": {
     "node": ">= 18.0.0"
